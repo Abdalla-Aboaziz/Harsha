@@ -1,0 +1,9 @@
+{
+  "MyApiKey": {
+    "ClientId": "ClientId From MyApiKeyJS.json ",
+    "ClientSecret": "ClientSecret From MyApiKeyJS.json "
+
+  }
+}
+// Custom configuration file to store API keys and secrets, separate from appsettings.json for better security and management.
+// Have The Highest Priority when loading configuration, so it will override any values in appsettings.json or appsettings.Development.json.
