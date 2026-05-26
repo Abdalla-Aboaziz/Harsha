@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configurations", "Configura
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationStocksApp(HttpClient)", "ConfigurationStocksApp(HttpClient)\ConfigurationStocksApp(HttpClient).csproj", "{83E9ABD1-FD9F-469A-B341-7BA683ABE64E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "Logging\Logging.csproj", "{D140D047-74DD-4432-89B2-7D3940330D69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging And Exceptions Handling", "Logging\Logging And Exceptions Handling.csproj", "{D140D047-74DD-4432-89B2-7D3940330D69}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Filters", "Filters\Filters.csproj", "{E736428A-8F4D-4632-8878-B80B52D92D1E}"
 EndProject

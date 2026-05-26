@@ -1,0 +1,22 @@
+﻿@using Logging_And_Exceptions_Handling.Models
+@model Products
+
+@{
+    ViewBag.Title = "Product Details";
+}
+
+<h1>Product Details</h1>
+
+<div class="card p-3">
+
+    <h3>Id : @Model.Id</h3>
+
+    <h3>Name : @Model.Name</h3>
+
+    <h3>Price : @Model.Price</h3>
+
+</div>
+
+<a asp-action="Index" class="btn btn-primary">
+    Back To List
+</a>

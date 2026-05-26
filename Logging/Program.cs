@@ -1,3 +1,4 @@
+using Logging.MiddleWare;
 using Microsoft.AspNetCore.HttpLogging;
 using Serilog;
 
@@ -40,13 +41,19 @@ namespace Logging
             });
             builder.Services.AddControllersWithViews();
             var app = builder.Build();
-            app.UseSerilogRequestLogging();
+         
 
             //create application pipeline
             if (builder.Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseExceptionHandlingMiddleware();
+            }
+                app.UseSerilogRequestLogging();
 
             //app.Logger.LogDebug("debug-message");
             //app.Logger.LogInformation("information-message");
@@ -54,7 +61,7 @@ namespace Logging
             //app.Logger.LogError("error-message");
             //app.Logger.LogCritical("critical-message");
 
-            
+
 
             app.UseStaticFiles();
             app.MapControllers();
